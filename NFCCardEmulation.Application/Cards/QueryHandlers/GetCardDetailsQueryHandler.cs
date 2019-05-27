@@ -30,7 +30,7 @@ namespace NFCCardEmulation.Application.Cards.QueryHandlers
                 .SingleOrDefaultAsync(cancellationToken));
 
             if(card == null)
-                throw new NotFoundException(nameof(User), request.Id);
+                throw new NotFoundException(nameof(Card), request.Id);
 
             return card;
         }

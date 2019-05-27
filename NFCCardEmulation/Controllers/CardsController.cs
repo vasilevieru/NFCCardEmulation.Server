@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using NFCCardEmulation.Application.Cards.Commands;
 using NFCCardEmulation.Application.Cards.Queries;
 
 namespace NFCCardEmulation.Controllers
@@ -20,11 +17,18 @@ namespace NFCCardEmulation.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult> GetById(int id)
+        public async Task<IActionResult> GetById(int id)
         {
             return Ok(await Mediator.Send(new GetCardDetailsQuery { Id = id }));
         }
 
+        [HttpPost]
+        public async Task<IActionResult> Create([FromBody] CreateCardCommand command)
+        {
+            var card = await Mediator.Send(command);
+
+            return CreatedAtAction(nameof(GetById), new { card.Id }, card);
+        }
 
     }
 }

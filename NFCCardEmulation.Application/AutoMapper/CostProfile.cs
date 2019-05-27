@@ -11,6 +11,12 @@ namespace NFCCardEmulation.Application.AutoMapper
         {
             CreateMap<CreateCostCommand, Cost>();
             CreateMap<Cost, CostDetailsModel>();
+
+            CreateMap<Cost, CostsOfShopViewModel>()
+                .ForMember(dest => dest.ShopName, src => src.MapFrom(x => x.Shop.Name));
+
+            CreateMap<Cost, CostsOfCardViewModel>()
+                .ForMember(dest => dest.CardNumber, src => src.MapFrom(x => x.Card.Number));
         }
     }
 }

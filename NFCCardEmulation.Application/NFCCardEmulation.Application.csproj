@@ -21,8 +21,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Costs\QueryHandlers\" />
-    <Folder Include="Costs\Queries\" />
+    <Folder Include="Shops\Commands\" />
+    <Folder Include="Shops\CommandHandlers\" />
+    <Folder Include="Shops\Validators\" />
   </ItemGroup>
 
 </Project>
