@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFCCardEmulation", "NFCCardEmulation\NFCCardEmulation.csproj", "{1B6912FE-71CB-4674-94C3-B7DE39D37C93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFCCardEmulation.Domain", "NFCCardEmulation.Core\NFCCardEmulation.Domain.csproj", "{B9FE8D1C-A85A-4EDD-9163-FE9FF8B831F1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{BCD393E8-73BE-42DD-BCCC-A2278A8890EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFCCardEmulation.Persistence", "NFCCardEmulation.Persistence\NFCCardEmulation.Persistence.csproj", "{3397D6DA-081B-440B-9EC9-16C0CF6BA4D4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{BC17228C-AE21-4338-9216-B564233FA5AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFCCardEmulation.Application", "NFCCardEmulation.Application\NFCCardEmulation.Application.csproj", "{35291F19-A429-4534-A478-C1E298E19D43}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{D95C6E4E-6AAD-4A64-AEDA-F23BF4996B6E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B6912FE-71CB-4674-94C3-B7DE39D37C93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B6912FE-71CB-4674-94C3-B7DE39D37C93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B6912FE-71CB-4674-94C3-B7DE39D37C93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B6912FE-71CB-4674-94C3-B7DE39D37C93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9FE8D1C-A85A-4EDD-9163-FE9FF8B831F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9FE8D1C-A85A-4EDD-9163-FE9FF8B831F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9FE8D1C-A85A-4EDD-9163-FE9FF8B831F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9FE8D1C-A85A-4EDD-9163-FE9FF8B831F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3397D6DA-081B-440B-9EC9-16C0CF6BA4D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3397D6DA-081B-440B-9EC9-16C0CF6BA4D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3397D6DA-081B-440B-9EC9-16C0CF6BA4D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3397D6DA-081B-440B-9EC9-16C0CF6BA4D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35291F19-A429-4534-A478-C1E298E19D43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35291F19-A429-4534-A478-C1E298E19D43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35291F19-A429-4534-A478-C1E298E19D43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35291F19-A429-4534-A478-C1E298E19D43}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1B6912FE-71CB-4674-94C3-B7DE39D37C93} = {D95C6E4E-6AAD-4A64-AEDA-F23BF4996B6E}
+		{B9FE8D1C-A85A-4EDD-9163-FE9FF8B831F1} = {BC17228C-AE21-4338-9216-B564233FA5AD}
+		{3397D6DA-081B-440B-9EC9-16C0CF6BA4D4} = {BCD393E8-73BE-42DD-BCCC-A2278A8890EC}
+		{35291F19-A429-4534-A478-C1E298E19D43} = {BC17228C-AE21-4338-9216-B564233FA5AD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {940701DB-8670-4B2D-9AE6-A26D8413245D}
+	EndGlobalSection
+EndGlobal
